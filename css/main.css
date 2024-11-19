@@ -106,7 +106,7 @@ body {
 }
 
 .profile ul li p {
-   color: var(--gray66);
+   color: var(--gray99);
    width: 56px;
    text-transform: uppercase;
 }
@@ -168,14 +168,16 @@ body {
    color: var(--gray99);
 }
 
-.inner {
+#main .inner {
    overflow-y: scroll;
+   overflow: hidden;
    width: 100%;
    height: 100%;
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 30px;
    margin-top: 46px;
+   margin-bottom: 10%;
 }
 
 ::-webkit-scrollbar {
@@ -247,6 +249,7 @@ body {
    height: 50px;
    line-height: 50px;
    font-size: 1.6rem;
+   font-weight: 500;
    color: #fff;
    align-items: center;
    justify-content: space-between;
@@ -261,6 +264,7 @@ body {
    height: 50px;
    line-height: 50px;
    font-size: 1.6rem;
+   font-weight: 500;
    color: #fff;
    align-items: center;
    justify-content: space-between;
@@ -275,6 +279,7 @@ body {
    height: 50px;
    line-height: 50px;
    font-size: 1.6rem;
+   font-weight: 500;
    color: var(--BK);
    align-items: center;
    justify-content: space-between;
@@ -289,6 +294,7 @@ body {
    height: 50px;
    line-height: 50px;
    font-size: 1.6rem;
+   font-weight: 500;
    color: var(--BK);
    align-items: center;
    justify-content: space-between;
@@ -303,12 +309,162 @@ body {
    height: 50px;
    line-height: 50px;
    font-size: 1.6rem;
+   font-weight: 500;
    color: #fff;
    align-items: center;
    justify-content: space-between;
    padding: 0 20px;
 }
 
+.enter .link .acheal {
+   width: 100%;
+   background-color: #2D6533;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+.enter .link .whale {
+   width: 100%;
+   background-color: #1f95e4;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+.enter .link .phoneCase {
+   width: 100%;
+   background-color: #EBE5DA;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: var(--BK);
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+.enter .link .sati {
+   width: 100%;
+   background-color: #2A5DFA;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+.enter .link .malJaranda {
+   width: 100%;
+   background-color: #E38600;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+.enter .link .fastorder {
+   width: 100%;
+   background-color: #727272;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+.enter .link .MS {
+   width: 100%;
+   background-color: #487e55;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+.enter .link .puppy {
+   width: 100%;
+   background-color: #ff60a5;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+.enter .link .iconposter {
+   width: 100%;
+   background-color: #00A18D;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+.enter .link .nintendo {
+   width: 100%;
+   background-color: #c50010;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
 
 /* .result {
    display: grid;
