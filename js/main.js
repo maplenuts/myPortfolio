@@ -1,18 +1,3 @@
-$(document).ready(function () {
-
-   // new
-   $(".new_img ul li:not(:first-child)").hide();
-
-   $(".new_name li").click(function () {
-      $(this).addClass("active").siblings().removeClass("active");
-      let idx = $(this).index();
-      $(".new_img li").eq(idx).fadeIn(300).siblings().fadeOut(0);
-   })
-
-   $(".menu li").click(function () {
-      $(this).addClass("active").siblings().removeClass("active");
-   })
-
    // swiper result
    $(".re_close").hide();
    $(".re_bg").hide();
@@ -125,4 +110,3 @@ $(document).ready(function () {
       $(".re_malJaranda").fadeIn();
    })
 
-}); //문서 준비 이벤트 종료(삭제X)
