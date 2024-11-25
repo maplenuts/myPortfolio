@@ -17,12 +17,14 @@
         rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css">
 
     <!-- JS-->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script src="js/jquery-3.7.1.min.js"></script>
      <script src="js/swiper-bundle.min.js"></script>
      <script src="js/main.js"></script>
@@ -34,12 +36,12 @@
         <!-- header section-->
         <header id="header">
             <div class="title">
-                <h1><a href="#">WONSEULKi</a></h1>
+                <h1 data-aos="fade-right" data-aos-duration="1500"><a href="index.html">WONSEULKi</a></h1>
             </div>
 
             <!-- gnb section-->
             <nav>
-                <ul class="gnb">
+                <ul class="gnb" data-aos="fade-left" data-aos-duration="1000">
                     <li><a href="#">about me</a></li>
                     <li class="active"><a href="#">portfolio</a></li>
                 </ul>
@@ -48,9 +50,9 @@
         <div id="container">
             <div id="side">
                 <div class="profile">
-                    <h2>profile.</h2>
-                    <img src="img/profile.png" alt="프로필사진">
-                    <ul>
+                    <h2 data-aos="fade-right" data-aos-duration="700">profile.</h2>
+                    <img src="img/profile.png" alt="프로필사진"  data-aos="fade-right" data-aos-duration="1000">
+                    <ul data-aos="fade-right" data-aos-duration="1400">
                         <li>
                             <p>name</p>원슬기
                         </li>
@@ -66,31 +68,31 @@
                     </ul>
                 </div>
                 <div class="skills">
-                    <h2>skills.</h2>
-                    <div class="skill">
+                    <h2 data-aos="fade-right" data-aos-duration="700">skills.</h2>
+                    <div class="skill" data-aos="fade-right" data-aos-duration="900">
                         <img src="img/Figma.png" alt="피그마">
                         <p>웹/앱 디자인 및 프로토타입</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1000">
                         <img src="img/VSCode.png" alt="VSCode">
                         <p>웹표준/반응형 웹사이트<br>
                             제작 및 유지보수</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1100">
                         <img src="img/JavaScript.png" alt="제이쿼리">
                         <p>스크롤 애니메이션, 클릭 이벤트, 조건문 문법구현, 기존코드 수정 및 커스텀</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1200">
                         <img src="img/Illustrator.png" alt="일러스트">
                         <p>명함, 현수막, 실사 등<br>
                             디자인 작업 및 발주</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1300">
                         <img src="img/Photoshop.png" alt="포토샵">
                         <p>사진편집/보정,<br>
                             디자인 작업 및 발주 </p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1300">
                         <img class="premier" src="img/Premier Pro.png" alt="프리미어">
                         <img src="img/vllo.png" alt="블로">
                         <p>자막 및 영상 편집</p>
@@ -98,14 +100,15 @@
                 </div>
             </div>
             <main id="main">
-                <ul class="menu">
+                <ul class="menu" data-aos="fade-up" data-aos-duration="800">
                     <li class="active"><a href="#">All</a></li>
                     <li><a href="#">uiux</a></li>
                     <li><a href="#">web</a></li>
                     <li><a href="#">design</a></li>
                 </ul>
-                <div class="inner">
-                    <div class="result">
+                <div class="inner" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="aboutme"></div>
+                    <div class="result uiux">
                         <img src="img/투어스태프.png" alt="투어스태프">
                         <div class="enter">
                             <div class="txt">
@@ -121,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result uiux">
                         <img src="img/아르고스.png" alt="아르고스">
                         <div class="enter">
                             <div class="txt">
@@ -138,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result uiux">
                         <img src="img/데이니.png" alt="데이니">
                         <div class="enter">
                             <div class="txt">
@@ -152,7 +155,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result web">
                         <img src="img/동화약품.png" alt="동화약품">
                         <div class="enter">
                             <div class="txt">
@@ -165,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result web">
                         <img src="img/네슬레.png" alt="네슬레">
                         <div class="enter">
                             <div class="txt">
@@ -178,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result design">
                         <img src="img/아크힐_2.png" alt="아크힐">
                         <div class="enter">
                             <div class="txt">
@@ -192,7 +195,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result design">
                         <img src="img/whaleWallpaper.png" alt="Dreaming whale" style="border: 1px solid #eee;">
                         <div class="enter">
                             <div class="txt">
@@ -205,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result web">
                         <img src="img/닌텐도.png" alt="닌텐도 홈페이지">
                         <div class="enter">
                             <div class="txt">
@@ -218,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result uiux">
                         <img src="img/패스트오더.png" alt="패스트오더">
                         <div class="enter">
                             <div class="txt">
@@ -232,7 +235,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result design">
                         <img src="img/폰케이스.png" alt="phonecase">
                         <div class="enter">
                             <div class="txt">
@@ -245,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result design">
                         <img src="img/사띠요가.png" alt="사띠요가 로고">
                         <div class="enter">
                             <div class="txt">
@@ -258,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result design">
                         <img src="img/말자란다.png" alt="말자란다 로고">
                         <div class="enter">
                             <div class="txt">
@@ -272,7 +275,7 @@
                         </div>
                     </div>
                     
-                    <div class="result">
+                    <div class="result design">
                         <img src="img/재승MS.png" alt="재승MS">
                         <div class="enter">
                             <div class="txt">
@@ -285,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result design">
                         <img src="img/루루퍼피.png" alt="루루퍼피">
                         <div class="enter">
                             <div class="txt">
@@ -298,7 +301,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result">
+                    <div class="result design">
                         <img src="img/혁신아이콘포스터.png" alt="혁신아이콘 포스터">
                         <div class="enter">
                             <div class="txt">
@@ -373,9 +376,7 @@
                 <img src="img/말자란다_1.png" alt="말자란다 로고디자인">
             </div>
         </div>
-    </div>
-
-    </div>
+    </div><!-- wrap -->
 </body>
 
 </html>
