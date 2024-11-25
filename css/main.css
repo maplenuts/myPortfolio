@@ -215,6 +215,15 @@ body {
    display: none;
 }
 
+/*---------------- about me ---------------- */
+.aboutme {
+   width: calc(1194px - 276px - 60px);
+   height: 100vh;
+   background: pink;
+   border-radius: 24px;
+}
+
+
 .result {
    border-radius: 24px;
    width: 414px;
@@ -496,6 +505,8 @@ body {
    justify-content: space-between;
    padding: 0 20px;
 }
+
+
 
 
 /*---------------- result ---------------- */
