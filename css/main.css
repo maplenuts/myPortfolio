@@ -353,7 +353,7 @@ body {
 .enter .link .dainy {
    width: calc((100% - 12px) / 2);
    background-color: #FDDB6D;
-   display: none;
+   display: flex;
    border-radius: 8px;
    height: 50px;
    line-height: 50px;
@@ -383,7 +383,7 @@ body {
 .enter .link .nestle {
    width: 100%;
    background-color: #7F6557;
-   display: none;
+   display: flex;
    border-radius: 8px;
    height: 50px;
    line-height: 50px;
@@ -533,7 +533,7 @@ body {
 .enter .link .nintendo {
    width: 100%;
    background-color: #c50010;
-   display: none;
+   display: flex;
    border-radius: 8px;
    height: 50px;
    line-height: 50px;
