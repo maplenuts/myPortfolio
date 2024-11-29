@@ -1,7 +1,14 @@
 
 $(document).ready(function () {
 
-   AOS.init();
+   AOS.init({
+
+      disable: function () {
+        var desktop = 1280;
+        return window.innerWidth > desktop;
+      } // 1280px 이상일 때 disable
+    
+    });
 
    // You can also pass an optional settings object
    // below listed default settings
