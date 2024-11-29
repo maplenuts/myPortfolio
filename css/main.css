@@ -24,7 +24,12 @@ body {
    max-width: 1194px;
 }
 
-#header {
+#container {
+   display: flex;
+   position: relative;
+}
+
+/* #header {
    max-width: 1194px;
    height: 70px;
    border-bottom: 1px solid var(--gray99);
@@ -33,12 +38,23 @@ body {
    position: fixed;
    background: #fafafa;
    z-index: 10;
+} */
+
+#side {
+   width: 276px;
+   height: 100%;
+   border-right: 1px solid var(--gray99);
+   position: fixed;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
 }
 
 #header .title {
    width: 276px;
-   height: 100%;
+   height: 70px;
    border-right: 1px solid var(--gray99);
+   border-bottom: 1px solid var(--gray99);
    position: relative;
 }
 
@@ -51,48 +67,6 @@ body {
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
-}
-
-#header nav {
-   width: calc(1194px - 276px);
-   padding: 0 4%;
-}
-
-#header .gnb {
-   display: flex;
-   justify-content: end;
-   gap: 30px;
-   font-family: var(--sub-font);
-}
-
-#header .gnb li a {
-   color: var(--gray66);
-}
-
-#header .gnb li:hover a {
-   color: var(--BK);
-   transition: all 0.3s;
-}
-
-#header .gnb li.active a {
-   color: var(--BK);
-   font-weight: 500;
-}
-
-#container {
-   display: flex;
-   position: relative;
-}
-
-#side {
-   width: 276px;
-   height: 100%;
-   border-right: 1px solid var(--gray99);
-   position: fixed;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   margin-top: 70px;
 }
 
 #side .profile {
@@ -132,6 +106,14 @@ body {
    padding: 20px 30px;
 }
 
+@media (min-width: 375px) and (max-width: 768px) {
+   #side {width: 100%; height: 100%; flex-wrap: wrap; position: static; border-right: none;}
+   #side .profile {width: 100%; padding: 30px 40px;}
+   #side .profile img {max-height: 280px;}
+   #header .title {width: 100%; border-right: none;}
+   .skills {padding: 30px 40px;}
+}
+
 .skills h2 {
    font-family: var(--sub-font);
    font-size: 1.8rem;
@@ -164,21 +146,53 @@ body {
 
 #main {
    width: calc(100% - 276px);
-   padding: 12px 0 0 30px;
    position: absolute;
-   top: 70px;
+   top: 0;
    right: 0;
    background: #fafafa;
+}
+
+#main nav {
+   max-width: calc(1194px - 276px);
+   height: 70px;
+   border-bottom: 1px solid var(--gray99);
+}
+
+
+#main .gnb {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   gap: 30px;
+   font-family: var(--sub-font);
+}
+
+#main .gnb li a {
+   color: var(--gray66);
+   line-height: 70px;
+}
+
+#main .gnb li:hover a {
+   color: var(--BK);
+   transition: all 0.3s;
+}
+
+#main .gnb li.active a {
+   color: var(--BK);
+   font-weight: 500;
 }
 
 #main .menu {
    display: flex;
    height: 40px;
    gap: 20px;
+   margin-top: 8px;
+   margin-left: 30px;
    margin-bottom: 50px;
    position: fixed;
    background: #fafafa;
 }
+
 
 #main .menu li.active a {
    color: var(--BK);
@@ -206,13 +220,30 @@ body {
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 24px;
-   margin-top: 46px;
+   margin-left: 30px;
+   margin-top: 58px;
    padding-bottom: 10%;
    position: fixed;
 }
 
 ::-webkit-scrollbar {
    display: none;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+   #main {position: static; width: 100%;}
+   #main nav {width: 100%; border-top: 1px solid var(--gray99);}
+   #main .gnb {justify-content: center; gap: 20%;}
+   #main .menu {position: static; margin: 0 auto; justify-content: center; margin-top: 12px;}
+   #main .inner {
+      position: static;
+      margin-top: 16px;
+      grid-template-columns: 1fr;
+      margin-left: 0;
+      width: 100%;
+      padding: 0 20px;
+      overflow-y: auto;
+   }
 }
 
 /*---------------- about me ---------------- */
@@ -222,7 +253,6 @@ body {
    background: pink;
    border-radius: 24px;
 }
-
 
 .result {
    border-radius: 24px;
@@ -279,6 +309,15 @@ body {
    display: flex;
    flex-wrap: wrap;
    gap: 12px;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+   .result {width: 100%; height: 300px;}
+   .result .enter {padding: 24px;}
+   .enter .txt .sub {font-size: 1.4rem;}
+   .enter .txt h2 {font-size: 1.8rem; margin-bottom: 12px;}
+   .enter .txt p {font-size: 1.4rem; margin-bottom: 4px;}
+   .uiux h2 br {display: none;}
 }
 
 .enter .link .tour {
@@ -644,4 +683,8 @@ body {
    top: 0;
    left: 50%;
    transform: translateX(-50%);
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+   #container {flex-wrap: wrap; position: static;}
 }
