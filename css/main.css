@@ -6,6 +6,7 @@
    --BK: #111111;
    --gray66: #666666;
    --gray99: #999999;
+   
 }
 
 /* 공통사항 */
@@ -21,12 +22,46 @@ body {
 #wrap {
    margin: 0 auto;
    /*min-width: 745px;*/
-   max-width: 1194px;
+   width: 1194px;
+   height: 100vh;
+   border-left: 1px solid var(--gray99);
+   border-right: 1px solid var(--gray99);
+}
+
+.preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: #070707;
+   z-index: 99;
+}
+.counter {
+   color: #fff;
+   font-family: var(--sub-font);
+   font-size: 10vw;
+   padding: 0.2em 0.8em;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+.hide {
+   opacity: 0;
+   transition: all 1s;
+   pointer-events: none;
 }
 
 #container {
    display: flex;
    position: relative;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+   #wrap {border: 0;}
 }
 
 /* #header {
@@ -106,10 +141,10 @@ body {
    padding: 20px 30px;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 370px) and (max-width: 768px) {
    #side {width: 100%; height: 100%; flex-wrap: wrap; position: static; border-right: none;}
    #side .profile {width: 100%; padding: 30px 40px;}
-   #side .profile img {max-height: 280px;}
+   #side .profile img {width: 100%; height: 300px;}
    #header .title {width: 100%; border-right: none;}
    .skills {padding: 30px 40px;}
 }
@@ -164,10 +199,12 @@ body {
    justify-content: end;
    align-items: center;
    gap: 30px;
+   padding-right: 30px;
    font-family: var(--sub-font);
 }
 
 #main .gnb li a {
+   display: block;
    color: var(--gray66);
    line-height: 70px;
 }
@@ -232,8 +269,8 @@ body {
 
 @media (min-width: 375px) and (max-width: 768px) {
    #main {position: static; width: 100%;}
-   #main nav {width: 100%; border-top: 1px solid var(--gray99);}
-   #main .gnb {justify-content: center; gap: 20%;}
+   #main nav {max-width: 100%; border-top: 1px solid var(--gray99);}
+   #main .gnb {justify-content: center; gap: 20%; width: 100%;}
    #main .menu {position: static; margin: 0 auto; justify-content: center; margin-top: 12px;}
    #main .inner {
       position: static;
@@ -243,6 +280,7 @@ body {
       width: 100%;
       padding: 0 20px;
       overflow-y: auto;
+      height: 100%;
    }
 }
 
