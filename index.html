@@ -24,75 +24,74 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- JS-->
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script src="js/jquery-3.7.1.min.js"></script>
-     <script src="js/swiper-bundle.min.js"></script>
-     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="counter">0</div>
+    </div>
     <div id="wrap">
-        <!-- header section-->
-        <header id="header">
-            <div class="title">
-                <h1 data-aos="fade-right" data-aos-duration="1500"><a href="index.html">WONSEULKi</a></h1>
-            </div>
-
-            <!-- gnb section-->
-            <nav>
-                <ul class="gnb" data-aos="fade-left" data-aos-duration="1000">
-                    <li><a href="#">about me</a></li>
-                    <li class="active"><a href="#">portfolio</a></li>
-                </ul>
-            </nav>
-        </header>
+        <!-- <div class="counter-wrap">
+            <h1 class="counter">0</h1>
+            <div class="counter-revealer"></div>
+        </div> -->
         <div id="container">
             <div id="side">
+                <header id="header">
+                    <div class="title">
+                        <h1 data-aos="fade-right" data-aos-duration="1500"><a class="rainbowBtn"
+                                href="index.html">WONSEULKi</a></h1>
+                    </div>
+                </header>
                 <div class="profile">
-                    <h2 data-aos="fade-right" data-aos-duration="700">profile.</h2>
-                    <img src="img/profile.png" alt="프로필사진"  data-aos="fade-right" data-aos-duration="1000">
-                    <ul data-aos="fade-right" data-aos-duration="1400">
-                        <li>
+                    <h2 data-aos="fade-right" data-aos-duration="800">profile.</h2>
+                    <img src="img/profile.png" alt="프로필사진" data-aos="fade-right" data-aos-duration="1000">
+                    <ul>
+                        <li data-aos="fade-right" data-aos-duration="1200">
                             <p>name</p>원슬기
                         </li>
-                        <li>
+                        <li data-aos="fade-right" data-aos-duration="1400">
                             <p>birth</p>1996. 11. 09
                         </li>
-                        <li>
+                        <li data-aos="fade-right" data-aos-duration="1600">
                             <p>tel</p>010-****-****
                         </li>
-                        <li>
+                        <li data-aos="fade-right" data-aos-duration="1800">
                             <p>email</p>hellodwya@gmail.com
                         </li>
                     </ul>
                 </div>
                 <div class="skills">
-                    <h2 data-aos="fade-right" data-aos-duration="700">skills.</h2>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="900">
+                    <h2 data-aos="fade-right" data-aos-duration="800">skills.</h2>
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1000">
                         <img src="img/Figma.png" alt="피그마">
                         <p>웹/앱 디자인 및 프로토타입</p>
                     </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1200">
                         <img src="img/VSCode.png" alt="VSCode">
                         <p>웹표준/반응형 웹사이트<br>
                             제작 및 유지보수</p>
                     </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1100">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1400">
                         <img src="img/JavaScript.png" alt="제이쿼리">
                         <p>스크롤 애니메이션, 클릭 이벤트, 조건문 문법구현, 기존코드 수정 및 커스텀</p>
                     </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1600">
                         <img src="img/Illustrator.png" alt="일러스트">
                         <p>명함, 현수막, 실사 등<br>
                             디자인 작업 및 발주</p>
                     </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1300">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="1800">
                         <img src="img/Photoshop.png" alt="포토샵">
                         <p>사진편집/보정,<br>
                             디자인 작업 및 발주 </p>
                     </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1300">
+                    <div class="skill" data-aos="fade-right" data-aos-duration="2000">
                         <img class="premier" src="img/Premier Pro.png" alt="프리미어">
                         <img src="img/vllo.png" alt="블로">
                         <p>자막 및 영상 편집</p>
@@ -100,6 +99,12 @@
                 </div>
             </div>
             <main id="main">
+                <nav>
+                    <ul class="gnb" data-aos="fade-left" data-aos-duration="1000">
+                        <li><a href="#">about me</a></li>
+                        <li class="active"><a href="#">portfolio</a></li>
+                    </ul>
+                </nav>
                 <ul class="menu" data-aos="fade-up" data-aos-duration="800">
                     <li class="active"><a href="#">All</a></li>
                     <li><a href="#">uiux</a></li>
@@ -117,10 +122,14 @@
                                 <p>기업 연계 프로젝트로 여행사 앱의 신규 UIUX 구축을 맡아 기획부터 설계 및 디자인 진행하였으며, 프로모션 랜딩페이지까지 함께 제작하였습니다.</p>
                             </div>
                             <div class="link">
-                                <a href="https://www.figma.com/slides/OtPgGqaGSDH4BhsnZjNnvU/%EC%97%AC%ED%96%89%EC%82%AC-%EC%95%B1-'%ED%88%AC%EC%96%B4%EC%8A%A4%ED%83%9C%ED%94%84'?node-id=4-9581&t=ZiceUD2dBkKVfnmy-1" target="_blank" class="tour">보고서<i class="bi bi-caret-right-fill"></i></a>
-                                <a href="https://www.figma.com/design/YNAprDc4qiUUelgFPEMdf7/%EB%94%94%EC%9E%90%EC%9D%B8%2F%EB%9E%9C%EB%94%A9%2F%EC%B5%9C%EC%A2%85%EA%B2%B0%EA%B3%BC%EB%AC%BC?node-id=0-1&t=Rhzn3NGoSzou9INK-1" target="_blank" class="tour">Figma<i class="bi bi-caret-right-fill"></i></a>
-                                <a href="https://www.figma.com/proto/YNAprDc4qiUUelgFPEMdf7/%EB%94%94%EC%9E%90%EC%9D%B8%2F%EB%9E%9C%EB%94%A9%2F%EC%B5%9C%EC%A2%85%EA%B2%B0%EA%B3%BC%EB%AC%BC?page-id=0%3A1&node-id=845-40040&node-type=canvas&viewport=490%2C36%2C0.02&t=qn3Qv4djVsy2Wemy-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=151%3A30673" target="_blank" class="tour">프로토타입<i class="bi bi-caret-right-fill"></i></a>
-                                <a href="https://tangkong2.github.io/team01/" target="_blank" class="tour">랜딩페이지<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://www.figma.com/slides/OtPgGqaGSDH4BhsnZjNnvU/%EC%97%AC%ED%96%89%EC%82%AC-%EC%95%B1-'%ED%88%AC%EC%96%B4%EC%8A%A4%ED%83%9C%ED%94%84'?node-id=4-9581&t=ZiceUD2dBkKVfnmy-1"
+                                    target="_blank" class="tour">보고서<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://www.figma.com/design/YNAprDc4qiUUelgFPEMdf7/%EB%94%94%EC%9E%90%EC%9D%B8%2F%EB%9E%9C%EB%94%A9%2F%EC%B5%9C%EC%A2%85%EA%B2%B0%EA%B3%BC%EB%AC%BC?node-id=0-1&t=Rhzn3NGoSzou9INK-1"
+                                    target="_blank" class="tour">Figma<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://www.figma.com/proto/YNAprDc4qiUUelgFPEMdf7/%EB%94%94%EC%9E%90%EC%9D%B8%2F%EB%9E%9C%EB%94%A9%2F%EC%B5%9C%EC%A2%85%EA%B2%B0%EA%B3%BC%EB%AC%BC?page-id=0%3A1&node-id=845-40040&node-type=canvas&viewport=490%2C36%2C0.02&t=qn3Qv4djVsy2Wemy-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=151%3A30673"
+                                    target="_blank" class="tour">프로토타입<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://tangkong2.github.io/team01/" target="_blank" class="tour">랜딩페이지<i
+                                        class="bi bi-caret-right-fill"></i></a>
                             </div>
                         </div>
                     </div>
@@ -134,10 +143,14 @@
                                 <p>기업 연계 프로젝트로 아르고스케어의 시니어 사용자들을 타겟층으로 한 알림장 앱 리뉴얼과 퍼블리싱 진행하였습니다.</p>
                             </div>
                             <div class="link">
-                                <a href="https://www.figma.com/slides/w4SiWifaqJCl10XHzcTb8h/%EC%95%84%EB%A5%B4%EA%B3%A0%EC%8A%A4%EC%BC%80%EC%96%B4-%EC%95%8C%EB%A6%BC%EC%9E%A5%EC%95%B1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-PPT?node-id=1-1117&t=eCrRl1fET4B3wEQg-1" target="_blank" class="argoscare">보고서<i class="bi bi-caret-right-fill"></i></a>
-                                <a href="https://www.figma.com/design/f92XG7AOEzztkgNWRopPPP/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84%2F%EB%94%94%EC%9E%90%EC%9D%B8?node-id=1-3&t=hH4pfuYYvsgcWILE-1" target="_blank" class="argoscare">Figma<i class="bi bi-caret-right-fill"></i></a>
-                                <a href="https://www.figma.com/proto/f92XG7AOEzztkgNWRopPPP/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84%2F%EB%94%94%EC%9E%90%EC%9D%B8?page-id=1%3A3&node-id=927-5283&node-type=canvas&viewport=698%2C279%2C0.06&t=FibCkkEUiShCNeZg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=927%3A5283&show-proto-sidebar=1" target="_blank" class="argoscare">프로토타입<i class="bi bi-caret-right-fill"></i></a>
-                                <a href="https://didgpals.github.io/argosassignmentbook/" target="_blank" class="argoscare">퍼블리싱<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://www.figma.com/slides/w4SiWifaqJCl10XHzcTb8h/%EC%95%84%EB%A5%B4%EA%B3%A0%EC%8A%A4%EC%BC%80%EC%96%B4-%EC%95%8C%EB%A6%BC%EC%9E%A5%EC%95%B1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-PPT?node-id=1-1117&t=eCrRl1fET4B3wEQg-1"
+                                    target="_blank" class="argoscare">보고서<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://www.figma.com/design/f92XG7AOEzztkgNWRopPPP/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84%2F%EB%94%94%EC%9E%90%EC%9D%B8?node-id=1-3&t=hH4pfuYYvsgcWILE-1"
+                                    target="_blank" class="argoscare">Figma<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://www.figma.com/proto/f92XG7AOEzztkgNWRopPPP/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84%2F%EB%94%94%EC%9E%90%EC%9D%B8?page-id=1%3A3&node-id=927-5283&node-type=canvas&viewport=698%2C279%2C0.06&t=FibCkkEUiShCNeZg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=927%3A5283&show-proto-sidebar=1"
+                                    target="_blank" class="argoscare">프로토타입<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://didgpals.github.io/argosassignmentbook/" target="_blank"
+                                    class="argoscare">퍼블리싱<i class="bi bi-caret-right-fill"></i></a>
                             </div>
                         </div>
                     </div>
@@ -164,7 +177,8 @@
                                 <p>국내 제약기업 중 최장수 기업인 '동화약품'의 100년의 역사와 규모가 느껴질 수 있도록 기획하여 디자인 및 퍼블리싱 진행하였습니다.</p>
                             </div>
                             <div class="link">
-                                <a href="https://maplenuts.github.io/portfolio_01/" target="_blank" class="dongwha">웹사이트<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://maplenuts.github.io/portfolio_01/" target="_blank"
+                                    class="dongwha">웹사이트<i class="bi bi-caret-right-fill"></i></a>
                             </div>
                         </div>
                     </div>
@@ -188,7 +202,8 @@
                                 <p class="sub">개인작업 | 기여도 100%</p>
                                 <h2>코스메틱 브랜드 'A.C Heal'<br>
                                     로고 및 패키지 제작</h2>
-                                <p>A.C Heal(아크힐)의 로고 제작 및 부처손(Selaginella)을 주재료로 한 천연 화장품 제품의 용기 및 패키지에 부착될 스티커 디자인 진행하였습니다.</p>
+                                <p>A.C Heal(아크힐)의 로고 제작 및 부처손(Selaginella)을 주재료로 한 천연 화장품 제품의 용기 및 패키지에 부착될 스티커 디자인
+                                    진행하였습니다.</p>
                             </div>
                             <div class="link">
                                 <a href="#" class="acheal">디자인<i class="bi bi-caret-right-fill"></i></a>
@@ -231,7 +246,8 @@
                             </div>
                             <div class="link">
                                 <a href="#" class="fastorder">디자인<i class="bi bi-caret-right-fill"></i></a>
-                                <a href="https://www.figma.com/design/GYbxMDsZJqXmLxCUff25QP/%5B%EB%9D%BC%EC%9A%B0%EB%93%9C%5D-%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%98%A4%EB%8D%94?node-id=61-468&t=mqsOC994qnslmKpp-1" target="_blank" class="fastorder">Figma<i class="bi bi-caret-right-fill"></i></a>
+                                <a href="https://www.figma.com/design/GYbxMDsZJqXmLxCUff25QP/%5B%EB%9D%BC%EC%9A%B0%EB%93%9C%5D-%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%98%A4%EB%8D%94?node-id=61-468&t=mqsOC994qnslmKpp-1"
+                                    target="_blank" class="fastorder">Figma<i class="bi bi-caret-right-fill"></i></a>
                             </div>
                         </div>
                     </div>
@@ -274,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="result design">
                         <img src="img/재승MS.png" alt="재승MS">
                         <div class="enter">
@@ -317,7 +333,9 @@
             </main>
         </div>
         <div class="re_bg">
-            <div class="re_close"><p>&times;</p></div>
+            <div class="re_close">
+                <p>&times;</p>
+            </div>
             <div class="swiper re_acheal">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="img/아크힐_1.png" alt="아크힐로고"></div>
@@ -377,6 +395,102 @@
             </div>
         </div>
     </div><!-- wrap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+        function startLoader() {
+            let counterElement = document.querySelector(".counter");
+            let currentValue = 0;
+
+            function updateCounter() {
+                if (currentValue === 100) {
+                    return;
+                }
+
+                currentValue += Math.floor(Math.random() * 10) + 1;
+
+                if (currentValue > 100) {
+                    currentValue = 100;
+                }
+
+                counterElement.textContent = currentValue;
+
+                let delay = Math.floor(Math.random() * 200) + 50;
+                setTimeout(updateCounter, delay);
+            }
+            updateCounter();
+        }
+
+        startLoader();
+
+        gsap.to(".preloader", 0.25, {
+            delay: 3.5,
+            opacity: 0,
+            onComplete: function() {
+            document.querySelector(".preloader").style.display = "none"; // 애니메이션 완료 후 display: none으로 설정
+        }
+        });
+    </script>
+    <script>
+        const ASCII_CHARS = "abcdefghijklmnñopqrstuvwxyz0123456789!#$%&/?'_-"
+        const COLORS = ["#ff6188", "#fc9867", "#ffd866", "#a9dc76", "#78dce8", "#ab9df2"]
+
+        class RainbowButton {
+            constructor(_btn) {
+                this.el = _btn
+                this.txt = this.el.innerText
+                this.overColor = COLORS[0]
+                this.fps = 24
+                this.events()
+            }
+
+            events() {
+                this.el.addEventListener("mouseenter", () => this.onMouseEnter(), false)
+                this.el.addEventListener("mouseleave", () => this.onMouseLeave(), false)
+            }
+
+            onMouseEnter() {
+                this.over_active = true
+                this.el.innerHTML = ""
+                this.rainbow()
+            }
+
+            rainbow() {
+                let letters = this.txt.split("")
+                for (let i = 0; i < letters.length; i++) {
+                    const span = document.createElement("span")
+                    this.el.appendChild(span)
+                    const letter = letters[i]
+                    span.innerText = letter
+                    if (letter != " ") {
+                        let idx = ASCII_CHARS.indexOf(letter.toLowerCase())
+                        let initChar = idx > 10 ? ASCII_CHARS[idx - 9] : ASCII_CHARS[0]
+                        setTimeout(() => this.letterTo(span, initChar, letter), 60 * i)
+                    }
+                }
+            }
+
+            onMouseLeave() {
+                this.over_active = false
+                this.el.innerHTML = this.txt
+            }
+
+            letterTo(span, from, to) {
+                let char = to
+                let color = this.overColor
+                if (from != to.toLowerCase() && this.over_active) {
+                    const idx = ASCII_CHARS.indexOf(from.toLowerCase())
+                    color = COLORS[~~(Math.random() * COLORS.length)]
+                    char = Math.random() > .5 ? from : from.toUpperCase()
+                    setTimeout(() => this.letterTo(span, ASCII_CHARS[idx + 1], to), 2000 / this.fps)
+                }
+                span.style.color = color
+                span.innerText = char
+            }
+        }
+
+        const _btn = new RainbowButton(document.querySelector(".rainbowBtn"))
+    </script>
+
 </body>
 
 </html>
