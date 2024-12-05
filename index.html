@@ -20,11 +20,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <link rel="stylesheet" href="css/main.css">
 
     <!-- JS-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
@@ -35,66 +36,77 @@
     <div class="preloader">
         <div class="counter">0</div>
     </div>
+
     <div id="wrap">
-        <!-- <div class="counter-wrap">
-            <h1 class="counter">0</h1>
-            <div class="counter-revealer"></div>
-        </div> -->
         <div id="container">
             <div id="side">
                 <header id="header">
                     <div class="title">
-                        <h1 data-aos="fade-right" data-aos-duration="1500"><a class="rainbowBtn"
-                                href="index.html">WONSEULKi</a></h1>
+                        <h1 data-aos="fade-right" data-aos-duration="1500"><a href="index.html">WONSEULKi</a></h1>
                     </div>
                 </header>
-                <div class="profile">
-                    <h2 data-aos="fade-right" data-aos-duration="800">profile.</h2>
-                    <img src="img/profile.png" alt="프로필사진" data-aos="fade-right" data-aos-duration="1000">
-                    <ul>
-                        <li data-aos="fade-right" data-aos-duration="1200">
-                            <p>name</p>원슬기
-                        </li>
-                        <li data-aos="fade-right" data-aos-duration="1400">
-                            <p>birth</p>1996. 11. 09
-                        </li>
-                        <li data-aos="fade-right" data-aos-duration="1600">
-                            <p>tel</p>010-****-****
-                        </li>
-                        <li data-aos="fade-right" data-aos-duration="1800">
-                            <p>email</p>hellodwya@gmail.com
-                        </li>
-                    </ul>
-                </div>
-                <div class="skills">
-                    <h2 data-aos="fade-right" data-aos-duration="800">skills.</h2>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="img/Figma.png" alt="피그마">
-                        <p>웹/앱 디자인 및 프로토타입</p>
+                <div class="side-scroll">
+                    <div class="profile">
+                        <h2 data-aos="fade-right" data-aos-duration="800">profile.</h2>
+                        <div class="flip-card" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="img/profile.png" alt="프로필사진">
+                                </div>
+                                <div class="card-back">
+                                    <p>함께 성장하는<br>디자인 파트너를 찾고 계신가요?<br>
+                                        언제든지 연락해 주세요&#58;&#41;
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <ul>
+                            <li data-aos="fade-right" data-aos-duration="1200">
+                                <p>name</p>원슬기
+                            </li>
+                            <li data-aos="fade-right" data-aos-duration="1400">
+                                <p>birth</p>1996. 11. 09
+                            </li>
+                            <li data-aos="fade-right" data-aos-duration="1600">
+                                <p>tel</p>010-****-****
+                            </li>
+                            <li data-aos="fade-right" data-aos-duration="1800">
+                                <p>email</p>hellodwya@gmail.com
+                            </li>
+                        </ul>
                     </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1200">
-                        <img src="img/VSCode.png" alt="VSCode">
-                        <p>웹표준/반응형 웹사이트<br>
-                            제작 및 유지보수</p>
-                    </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1400">
-                        <img src="img/JavaScript.png" alt="제이쿼리">
-                        <p>스크롤 애니메이션, 클릭 이벤트, 조건문 문법구현, 기존코드 수정 및 커스텀</p>
-                    </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1600">
-                        <img src="img/Illustrator.png" alt="일러스트">
-                        <p>명함, 현수막, 실사 등<br>
-                            디자인 작업 및 발주</p>
-                    </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="1800">
-                        <img src="img/Photoshop.png" alt="포토샵">
-                        <p>사진편집/보정,<br>
-                            디자인 작업 및 발주 </p>
-                    </div>
-                    <div class="skill" data-aos="fade-right" data-aos-duration="2000">
-                        <img class="premier" src="img/Premier Pro.png" alt="프리미어">
-                        <img src="img/vllo.png" alt="블로">
-                        <p>자막 및 영상 편집</p>
+                    <div class="skills">
+                        <h2 data-aos="fade-right" data-aos-duration="800">skills.</h2>
+                        <div class="skill" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="img/Figma.png" alt="피그마">
+                            <p>웹/앱 디자인 및 프로토타입</p>
+                        </div>
+                        <div class="skill" data-aos="fade-right" data-aos-duration="1200">
+                            <img src="img/VSCode.png" alt="VSCode">
+                            <p>웹표준/반응형 웹사이트<br>
+                                제작 및 유지보수</p>
+                        </div>
+                        <div class="skill" data-aos="fade-right" data-aos-duration="1400">
+                            <img src="img/JavaScript.png" alt="제이쿼리">
+                            <p>스크롤 애니메이션, 클릭 이벤트, 조건문 문법구현, 기존코드 수정 및 커스텀</p>
+                        </div>
+                        <div class="skill" data-aos="fade-right" data-aos-duration="1600">
+                            <img src="img/Illustrator.png" alt="일러스트">
+                            <p>명함, 현수막, 실사 등<br>
+                                디자인 작업 및 발주</p>
+                        </div>
+                        <div class="skill" data-aos="fade-right" data-aos-duration="1800">
+                            <img src="img/Photoshop.png" alt="포토샵">
+                            <p>사진편집/보정,<br>
+                                디자인 작업 및 발주 </p>
+                        </div>
+                        <div class="skill" data-aos="fade-right" data-aos-duration="2000">
+                            <img class="premier" src="img/Premier Pro.png" alt="프리미어">
+                            <img src="img/vllo.png" alt="블로">
+                            <p>자막 및 영상 편집</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,7 +124,56 @@
                     <li><a href="#">design</a></li>
                 </ul>
                 <div class="inner" data-aos="fade-up" data-aos-duration="1400">
-                    <div class="aboutme"></div>
+                    <div class="aboutme">
+                        <div class="container">
+                            <h1 class="aboutTxt">Communication<span>소통하고</span></h1>
+                            <h1 class="aboutTxt">Cooperation<span>협력하여</span></h1>
+                            <h1 class="aboutTxt">Achievement<span>이뤄내고</span></h1>
+                            <h1 class="aboutTxt">Growth<span>성장하다</span></h1>
+                        </div>
+                        <div class="myTxt" data-aos="fade-up" data-aos-duration="1200">
+                            <dl>
+                                <dt>About Me</dt>
+                                <dd>안녕하세요!<br>
+                                    적극적으로 소통하고 의견을 공유하여<br>
+                                    좋은 결과물<i>Good Design</i>을 만들어내는<br>
+                                    디자인&amp;퍼블리셔 원슬기라고 합니다.<br>
+                                    사용자가 의미 있고 가치 있는 경험을 할 수 있도록<br>
+                                    Figma, HTML, CSS, JavaScript를 기반으로<br>
+                                    디자인과 개발에 힘쓰고 있습니다.<br></dd>
+                            </dl>
+
+                            <dl>
+                                <dt>Team Play</dt>
+                                <dd>원활한 소통과 협업을 중요시하고<br>
+                                    맡은 프로젝트의 의도와 목적을 우선으로 고려하여<br>
+                                    모두가 만족할 수 있는 결과물을 추구합니다.<br>
+                                    이러한 마인드로 (재)부산인재개발원 부산IT교육센터에서<br>
+                                    실무연계 팀 프로젝트 2회 중 전부 팀장을 맡았고<br>
+                                    팀원들과 함께 좋은 결과를 낼 수 있었습니다.</dd>
+                            </dl>
+
+                            <dl>
+                                <dt>Learning</dt>
+                                <dd>지속해서 트렌드를 확인하고 다양한 레퍼런스를 찾아보며<br>
+                                    개인 작업을 통해 학습하고 연습해 보고 있습니다.<br>
+                                    배움을 환영하고 열린 마음으로 피드백을 받으며,<br>
+                                    더 좋은 방향으로 개선하기 위해 고민하고 노력합니다.</dd>
+                            </dl>
+                            <div class="lets">
+                                <h3>Let's Work Together!</h3>
+                                <p>
+                                    꾸준히 배우고 성장하는 디자인&퍼블리셔 원슬기입니다.<br>
+                                    저의 노력과 열정이 담긴 포트폴리오이며,
+                                    시간내서 봐주셔서 감사합니다.
+                                </p>
+                                <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었으며, 사용된 일부 이미지 및 폰트는 별도의 출처가 있음을 밝힙니다.<br>
+                                    Designed and developed by Seulki. © 2024 All rights reserved.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
                     <div class="result uiux">
                         <img src="img/투어스태프.png" alt="투어스태프">
                         <div class="enter">
@@ -154,7 +215,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result uiux">
+                    <!-- <div class="result uiux">
                         <img src="img/데이니.png" alt="데이니">
                         <div class="enter">
                             <div class="txt">
@@ -167,7 +228,7 @@
                                 <a href="#" class="dainy">Figma<i class="bi bi-caret-right-fill"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="result web">
                         <img src="img/동화약품.png" alt="동화약품">
                         <div class="enter">
@@ -223,7 +284,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="result web">
+                    <!-- <div class="result web">
                         <img src="img/닌텐도.png" alt="닌텐도 홈페이지">
                         <div class="enter">
                             <div class="txt">
@@ -235,7 +296,7 @@
                                 <a href="#" class="nintendo">웹사이트<i class="bi bi-caret-right-fill"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="result uiux">
                         <img src="img/패스트오더.png" alt="패스트오더">
                         <div class="enter">
@@ -394,16 +455,40 @@
                 <img src="img/말자란다_1.png" alt="말자란다 로고디자인">
             </div>
         </div>
+
     </div><!-- wrap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script>
+        let loaderStarted = false; // 로더가 시작되었는지 확인하는 플래그
+
         function startLoader() {
+            if (loaderStarted) return; // 이미 실행된 경우 함수 종료
+            loaderStarted = true; // 로더 시작 플래그 설정
+
             let counterElement = document.querySelector(".counter");
             let currentValue = 0;
 
             function updateCounter() {
                 if (currentValue === 100) {
-                    return;
+                    // 로더가 완료되면 AOS 초기화
+                    AOS.init({
+                        disable: false,
+                        startEvent: 'DOMContentLoaded',
+                        initClassName: 'aos-init',
+                        animatedClassName: 'aos-animate',
+                        useClassNames: false,
+                        disableMutationObserver: false,
+                        debounceDelay: 50,
+                        throttleDelay: 99,
+                        offset: 0,
+                        delay: 0,
+                        duration: 3000,
+                        easing: 'ease',
+                        once: false,
+                        mirror: false,
+                        anchorPlacement: 'top-bottom',
+                    });
+                    return; // 로더가 완료되면 함수 종료
                 }
 
                 currentValue += Math.floor(Math.random() * 10) + 1;
@@ -425,72 +510,74 @@
         gsap.to(".preloader", 0.25, {
             delay: 3.5,
             opacity: 0,
-            onComplete: function() {
-            document.querySelector(".preloader").style.display = "none"; // 애니메이션 완료 후 display: none으로 설정
-        }
+            onComplete: function () {
+                document.querySelector(".preloader").style.display = "none"; // 애니메이션 완료 후 display: none으로 설정
+            }
         });
+
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     const ASCII_CHARS = "abcdefghijklmnñopqrstuvwxyz0123456789!#$%&/?'_-";
+        //     const COLORS = ["#ff6188", "#fc9867", "#ffd866", "#a9dc76", "#78dce8", "#ab9df2"];
+
+        //     class RainbowButton {
+        //         constructor(_btn) {
+        //             this.el = _btn;
+        //             this.txt = this.el.innerText;
+        //             this.overColor = COLORS[0];
+        //             this.fps = 24;
+        //             this.events();
+        //         }
+
+        //         events() {
+        //             this.el.addEventListener("mouseenter", () => this.onMouseEnter(), false);
+        //             this.el.addEventListener("mouseleave", () => this.onMouseLeave(), false);
+        //         }
+
+        //         onMouseEnter() {
+        //             this.over_active = true;
+        //             this.el.innerHTML = "";
+        //             this.rainbow();
+        //         }
+
+        //         rainbow() {
+        //             let letters = this.txt.split("");
+        //             for (let i = 0; i < letters.length; i++) {
+        //                 const span = document.createElement("span");
+        //                 this.el.appendChild(span);
+        //                 const letter = letters[i];
+        //                 span.innerText = letter;
+        //                 if (letter != " ") {
+        //                     let idx = ASCII_CHARS.indexOf(letter.toLowerCase());
+        //                     let initChar = idx > 10 ? ASCII_CHARS[idx - 9] : ASCII_CHARS[0];
+        //                     setTimeout(() => this.letterTo(span, initChar, letter), 60 * i);
+        //                 }
+        //             }
+        //         }
+
+        //         onMouseLeave() {
+        //             this.over_active = false;
+        //             this.el.innerHTML = this.txt;
+        //         }
+
+        //         letterTo(span, from, to) {
+        //             let char = to;
+        //             let color = this.overColor;
+        //             if (from != to.toLowerCase() && this.over_active) {
+        //                 const idx = ASCII_CHARS.indexOf(from.toLowerCase());
+        //                 color = COLORS[~~(Math.random() * COLORS.length)];
+        //                 char = Math.random() > .5 ? from : from.toUpperCase();
+        //                 setTimeout(() => this.letterTo(span, ASCII_CHARS[idx + 1], to), 1000 / this.fps);
+        //             }
+        //             span.style.color = color;
+        //             span.innerText = char;
+        //         }
+        //     }
+
+        //     // 모든 .rainbowBtn 요소에 대해 RainbowButton 인스턴스를 생성
+        //     const buttons = document.querySelectorAll(".rainbowBtn");
+        //     buttons.forEach(btn => new RainbowButton(btn));
+        // });
     </script>
-    <script>
-        const ASCII_CHARS = "abcdefghijklmnñopqrstuvwxyz0123456789!#$%&/?'_-"
-        const COLORS = ["#ff6188", "#fc9867", "#ffd866", "#a9dc76", "#78dce8", "#ab9df2"]
-
-        class RainbowButton {
-            constructor(_btn) {
-                this.el = _btn
-                this.txt = this.el.innerText
-                this.overColor = COLORS[0]
-                this.fps = 24
-                this.events()
-            }
-
-            events() {
-                this.el.addEventListener("mouseenter", () => this.onMouseEnter(), false)
-                this.el.addEventListener("mouseleave", () => this.onMouseLeave(), false)
-            }
-
-            onMouseEnter() {
-                this.over_active = true
-                this.el.innerHTML = ""
-                this.rainbow()
-            }
-
-            rainbow() {
-                let letters = this.txt.split("")
-                for (let i = 0; i < letters.length; i++) {
-                    const span = document.createElement("span")
-                    this.el.appendChild(span)
-                    const letter = letters[i]
-                    span.innerText = letter
-                    if (letter != " ") {
-                        let idx = ASCII_CHARS.indexOf(letter.toLowerCase())
-                        let initChar = idx > 10 ? ASCII_CHARS[idx - 9] : ASCII_CHARS[0]
-                        setTimeout(() => this.letterTo(span, initChar, letter), 60 * i)
-                    }
-                }
-            }
-
-            onMouseLeave() {
-                this.over_active = false
-                this.el.innerHTML = this.txt
-            }
-
-            letterTo(span, from, to) {
-                let char = to
-                let color = this.overColor
-                if (from != to.toLowerCase() && this.over_active) {
-                    const idx = ASCII_CHARS.indexOf(from.toLowerCase())
-                    color = COLORS[~~(Math.random() * COLORS.length)]
-                    char = Math.random() > .5 ? from : from.toUpperCase()
-                    setTimeout(() => this.letterTo(span, ASCII_CHARS[idx + 1], to), 2000 / this.fps)
-                }
-                span.style.color = color
-                span.innerText = char
-            }
-        }
-
-        const _btn = new RainbowButton(document.querySelector(".rainbowBtn"))
-    </script>
-
 </body>
 
 </html>
