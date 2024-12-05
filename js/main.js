@@ -1,35 +1,38 @@
-
 $(document).ready(function () {
 
-   AOS.init({
-
-      disable: function () {
-         var desktop = 1280;
-         return window.innerWidth > desktop;
-      },
-
-      // Global settings:
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-      initClassName: 'aos-init', // class applied after initialization
-      animatedClassName: 'aos-animate', // class applied on animation
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
 
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 0, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 400, // values from 0 to 3000, with step 50ms
-      easing: 'ease', // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+   // const text = document.querySelector(".myTxt p").innerHTML; // p 요소의 HTML 가져오기
+   // const typingElement = document.querySelector(".myTxt p");
+   // typingElement.innerHTML = ""; // 초기화
+   // let index = 0;
 
-   });
+   // function type() {
+   //    if (index < text.length) {
+   //       if (text.charAt(index) === '<') {
+   //          // <br> 태그를 만났을 때
+   //          while (text.charAt(index) !== '>') {
+   //             index++; // >까지 인덱스 증가
+   //          }
+   //          typingElement.innerHTML += '<br>'; // 줄 바꿈 추가
+   //       } else {
+   //          typingElement.innerHTML += text.charAt(index); // 현재 인덱스의 문자 추가
+   //       }
+   //       index++;
+   //       setTimeout(type, 10); // 50ms 후에 다음 문자 타이핑
+   //    }
+   // }
 
+   // type(); // 타이핑 시작
+
+   // profile
+   $(".pro-hover").hide();
+   $(".profile").mouseenter(function () {
+      $(".pro-hover").fadeIn();
+   })
+   $(".profile").mouseleave(function () {
+      $(".pro-hover").fadeOut();
+   })
 
 
    // gnb
@@ -39,7 +42,9 @@ $(document).ready(function () {
       $(this).siblings().removeClass("active");
    })
    $(".gnb>li:nth-child(1)").click(function () {
-      $("#main .menu").fadeOut(0);
+      $("#main .menu").hide(0, function () {
+         $(this).css("display", "none"); // hide 후 display: none 설정
+      });
       $(".result").fadeOut(0);
       $(".aboutme").fadeIn(300);
    })
