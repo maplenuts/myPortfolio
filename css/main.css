@@ -119,6 +119,10 @@ body::before {
    transform: translate(-50%, -50%);
 }
 
+.title h1 a {
+   cursor: pointer;
+}
+
 #side .profile {
    padding: 20px 30px;
    width: 276px;
@@ -235,35 +239,134 @@ body::before {
    }
 }
 
+.skills {
+   color: var(--BK);
+   padding: 20px 30px;
+}
+
 .skills h2 {
    font-family: var(--sub-font);
    font-size: 1.8rem;
    font-weight: 500;
-   margin-bottom: 8px;
+   margin-bottom: 12px;
 }
 
-.skills p {
-   line-height: 1.6rem;
-}
-
-.skills .skill {
-   display: flex;
-   gap: 12px;
-   font-size: 13px;
-   padding: 8px 0;
-   align-items: center;
-   color: var(--gray66);
-}
-
-.skills .skill img {
+.skills img {
    width: 40px;
    height: 40px;
    object-fit: contain;
 }
 
-.skill .premier {
-   margin-right: -6px;
+.skills ul li {
+   display: flex;
+   gap: 12px;
+   margin-bottom: 24px;
+   align-items: center;
 }
+
+.skills .progress-box {
+   width: 100%;
+}
+.progress-box .sk-tit {
+   font-family: var(--sub-font);
+   font-size: 1.3rem;
+   color: var(--gray66);
+   letter-spacing: -0.4px;
+}
+.progress-box p {
+   font-family: var(--main-font);
+   line-height: 110%;
+   font-size: 1.3rem;
+   color: var(--gray66);
+   margin-bottom: 5px;
+   letter-spacing: -0.1px;
+}
+.progress {
+   width: 100%;
+   height: 8px;
+   border-radius: 8px;
+   background: rgba(0, 0, 0, 0.1);
+   /* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.08); */
+}
+.progress .progress-bar {
+   height: 8px;
+   border-radius: 20px;
+   background-image:
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+   transition: 0.4s linear;
+   transition-property: width, background-color;
+}
+.progress-moved .sk-figma {
+   width: 95%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-photo {
+   width: 80%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-illust {
+   width: 90%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-html {
+   width: 85%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-css {
+   width: 85%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-vsc {
+   width: 85%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-java {
+   width: 70%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-premier {
+   width: 30%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-vllo {
+   width: 90%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-store {
+   width: 80%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-ppt {
+   width: 70%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-excel {
+   width: 50%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+.progress-moved .sk-hwp {
+   width: 60%;
+   background-color: pink;
+   animation: progressAnimation 5s;
+}
+
+@keyframes progressAnimation {
+   0% {width: 5%;}
+   100% {width: 90%;}
+}
+
 
 #main {
    width: calc(100% - 276px);
@@ -292,6 +395,7 @@ body::before {
    display: block;
    color: var(--gray66);
    line-height: 70px;
+   cursor: pointer;
 }
 
 #main .gnb li:hover a {
@@ -327,6 +431,7 @@ body::before {
    font-weight: 400;
    color: var(--gray99);
    background: #fafafa;
+   cursor: pointer;
 }
 
 #main .menu li:hover a {
@@ -400,7 +505,7 @@ body::before {
    flex-direction: column;
    justify-content: center;
    margin-left: 8px;
-   margin-bottom: 40px;
+   margin-bottom: 50px;
 }
 
 .aboutTxt {
@@ -459,8 +564,24 @@ a {
    position: relative;
 }
 
+.myTxt b {
+   font-weight: 600;
+}
+
+.myTxt mark {
+   background-color: #eee;
+   color: var(--BK);
+   transition: all 0.8s;
+   font-weight: 600;
+}
+
+.myTxt strong {
+   color: pink;
+   transition: all 0.8s;
+}
+
 .myTxt dl {
-   padding: 30px 0px;
+   padding: 40px 0px;
 }
 
 .myTxt dt {
@@ -473,7 +594,7 @@ a {
    background: #eee;
    border-radius: 50px;
    padding: 6px 16px;
-   margin-bottom: 12px;
+   margin-bottom: 16px;
    transition: all 0.8s;
 }
 
@@ -482,9 +603,19 @@ a {
    color: #111;
 }
 
+.myTxt dl:hover strong {
+   background-color: transparent;
+   color: hotpink;
+}
+
+.myTxt dl:hover mark {
+   background-color: rgb(172, 241, 172);
+}
+
 .myTxt dd {
-   display: block;
+   font-size: 1.8rem;
    padding-left: 8px;
+   line-height: 160%;
 }
 
 .myTxt i {
