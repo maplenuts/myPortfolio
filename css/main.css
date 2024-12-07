@@ -239,16 +239,39 @@ body::before {
    }
 }
 
-.skills {
-   color: var(--BK);
-   padding: 20px 30px;
+.skills .sk-tit {
+   display: flex;
+   justify-content: space-between;
 }
 
-.skills h2 {
+.sk-tit h2 {
    font-family: var(--sub-font);
    font-size: 1.8rem;
    font-weight: 500;
    margin-bottom: 12px;
+}
+
+.sk-tit .scrollMe {
+   font-family: var(--sub-font);
+   color: var(--gray99);
+   display: flex;
+}
+.scrollMe p {
+   font-style: 1rem;
+}
+.scrollMe i {
+   font-size: 1.4rem;
+   padding-left: 4px;
+   animation: scrollme 1.5s infinite ease-out;
+}
+
+@keyframes blink {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+@keyframes scrollme {
+   0% {transform: translateY(-4px); opacity: 0;}
+   100% {transform: translateY(4px); opacity: 1;}
 }
 
 .skills img {
