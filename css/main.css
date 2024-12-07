@@ -298,67 +298,67 @@ body::before {
 }
 .progress-moved .sk-figma {
    width: 95%;
-   background-color: pink;
+   background-color: rgb(255, 141, 160);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-photo {
    width: 80%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-illust {
    width: 90%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-html {
    width: 85%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-css {
    width: 85%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-vsc {
    width: 85%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-java {
    width: 70%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-premier {
    width: 30%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-vllo {
    width: 90%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-store {
    width: 80%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-ppt {
    width: 70%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-excel {
    width: 50%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 .progress-moved .sk-hwp {
    width: 60%;
-   background-color: pink;
+   background-color: rgb(255, 135, 155);
    animation: progressAnimation 5s;
 }
 
@@ -605,7 +605,7 @@ a {
 
 .myTxt dl:hover strong {
    background-color: transparent;
-   color: hotpink;
+   color: rgb(255, 135, 155);
 }
 
 .myTxt dl:hover mark {
