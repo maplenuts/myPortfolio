@@ -188,6 +188,18 @@ $(document).ready(function () {
       loop: true,
    });
 
+   $(".re_sayou").hide();
+   $(".link .sayou").click(function () {
+      $(".re_close").fadeIn();
+      $(".re_bg").fadeIn();
+      $(".re_sayou").fadeIn();
+   })
+   $(".re_close").click(function () {
+      $(".re_close").hide();
+      $(".re_bg").hide();
+      $(".re_sayou").hide();
+   })
+
    $(".re_fastorder").hide();
    $(".link .fastorder").click(function () {
       $(".re_close").fadeIn();
