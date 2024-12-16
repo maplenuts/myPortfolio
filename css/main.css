@@ -867,6 +867,21 @@ a {
    padding: 0 20px;
 }
 
+.enter .link .sayou {
+   width: 100%;
+   background-color: #101D6B;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
 .enter .link .whale {
    width: 100%;
    background-color: #1f95e4;
@@ -1107,7 +1122,8 @@ a {
 }
 
 .re_MS,
-.re_puppy {
+.re_puppy,
+.re_sayou {
    width: 80%;
    height: 90%;
    position: absolute;
@@ -1120,7 +1136,8 @@ a {
 }
 
 .re_MS img,
-.re_puppy img {
+.re_puppy img,
+.re_sayou img {
    width: 65%;
    position: absolute;
    top: 0;
