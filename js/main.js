@@ -200,6 +200,18 @@ $(document).ready(function () {
       $(".re_bymeal").hide();
    })
 
+   $(".re_mulmangcho").hide();
+   $(".link .mulmangcho").click(function () {
+      $(".re_close").fadeIn();
+      $(".re_bg").fadeIn();
+      $(".re_mulmangcho").fadeIn();
+   })
+   $(".re_close").click(function () {
+      $(".re_close").hide();
+      $(".re_bg").hide();
+      $(".re_mulmangcho").hide();
+   })
+
    $(".re_sayou").hide();
    $(".link .sayou").click(function () {
       $(".re_close").fadeIn();
