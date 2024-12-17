@@ -187,6 +187,18 @@ $(document).ready(function () {
       clickable: true,
       loop: true,
    });
+   
+   $(".re_bymeal").hide();
+   $(".link .bymeal").click(function () {
+      $(".re_close").fadeIn();
+      $(".re_bg").fadeIn();
+      $(".re_bymeal").fadeIn();
+   })
+   $(".re_close").click(function () {
+      $(".re_close").hide();
+      $(".re_bg").hide();
+      $(".re_bymeal").hide();
+   })
 
    $(".re_sayou").hide();
    $(".link .sayou").click(function () {
