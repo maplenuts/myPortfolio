@@ -957,6 +957,21 @@ a {
    padding: 0 20px;
 }
 
+.enter .link .bymeal {
+   width: 100%;
+   background-color: #bd8048;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
 .enter .link .AIsearch {
    width: 100%;
    background-color: #FF5156;
@@ -1138,7 +1153,8 @@ a {
 
 .re_MS,
 .re_puppy,
-.re_sayou {
+.re_sayou,
+.re_bymeal {
    width: 80%;
    height: 90%;
    position: absolute;
@@ -1152,7 +1168,8 @@ a {
 
 .re_MS img,
 .re_puppy img,
-.re_sayou img {
+.re_sayou img,
+.re_bymeal img {
    width: 65%;
    position: absolute;
    top: 0;
