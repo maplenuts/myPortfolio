@@ -957,6 +957,21 @@ a {
    padding: 0 20px;
 }
 
+.enter .link .AIsearch {
+   width: 100%;
+   background-color: #FF5156;
+   display: flex;
+   border-radius: 8px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
 .enter .link .MS {
    width: 100%;
    background-color: #487e55;
